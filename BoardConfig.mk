@@ -7,11 +7,11 @@
 
 BOARD_VENDOR := lenovo
 
-DEVICE_PATH := device/lenovo/zippo
+DEVICE_PATH := device/lenovo/m1971
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := zippo
+TARGET_OTA_ASSERT_DEVICE := m1971
 
 # FM
 BOARD_HAVE_QCOM_FM := true
@@ -21,7 +21,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CONFIG := lineage_zippo_defconfig
+  TARGET_KERNEL_CONFIG := lineage_m1971_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
   TARGET_KERNEL_SOURCE := kernel/lenovo/sm8150
 endif
@@ -38,4 +38,4 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Inherit from the proprietary version
--include vendor/lenovo/zippo/BoardConfigVendor.mk
+-include vendor/lenovo/m1971/BoardConfigVendor.mk

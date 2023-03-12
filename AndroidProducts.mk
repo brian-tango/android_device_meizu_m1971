@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_zippo.mk
+    $(LOCAL_DIR)/lineage_m1971.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_zippo-user \
-    lineage_zippo-userdebug \
-    lineage_zippo-eng
+    lineage_m1971-user \
+    lineage_m1971-userdebug \
+    lineage_m1971-eng

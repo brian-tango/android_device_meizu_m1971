@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=zippo
+export DEVICE=m1971
 export DEVICE_COMMON=sm8150-common
 export VENDOR=lenovo
 
