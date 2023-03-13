@@ -21,7 +21,7 @@ import sys
 from hashlib import sha1
 
 device = 'm1971'
-vendor = 'lenovo'
+vendor = 'meizu'
 
 with open('proprietary-files.txt', 'r') as f:
     lines = f.read().splitlines()

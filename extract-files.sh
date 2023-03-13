@@ -16,6 +16,6 @@ set -e
 
 export DEVICE=m1971
 export DEVICE_COMMON=sm8150-common
-export VENDOR=lenovo
+export VENDOR=meizu
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

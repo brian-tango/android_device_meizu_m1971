@@ -3,11 +3,11 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
--include device/lenovo/sm8150-common/BoardConfigCommon.mk
+-include device/meizu/sm8150-common/BoardConfigCommon.mk
 
-BOARD_VENDOR := lenovo
+BOARD_VENDOR := meizu
 
-DEVICE_PATH := device/lenovo/m1971
+DEVICE_PATH := device/meizu/m1971
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
@@ -23,13 +23,13 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CONFIG := lineage_m1971_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
-  TARGET_KERNEL_SOURCE := kernel/lenovo/sm8150
+  TARGET_KERNEL_SOURCE := kernel/meizu/sm8150
 endif
 
 # Fingerprint
-SOONG_CONFIG_LENOVO_MSMNILE_FOD_POS_X = 450
-SOONG_CONFIG_LENOVO_MSMNILE_FOD_POS_Y = 1916
-SOONG_CONFIG_LENOVO_MSMNILE_FOD_SIZE = 178
+SOONG_CONFIG_meizu_MSMNILE_FOD_POS_X = 450
+SOONG_CONFIG_meizu_MSMNILE_FOD_POS_Y = 1916
+SOONG_CONFIG_meizu_MSMNILE_FOD_SIZE = 178
 
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
@@ -47,4 +47,4 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Inherit from the proprietary version
--include vendor/lenovo/m1971/BoardConfigVendor.mk
+-include vendor/meizu/m1971/BoardConfigVendor.mk

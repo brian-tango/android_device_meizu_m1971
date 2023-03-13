@@ -302,7 +302,7 @@ vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/hw/sensors.hal.tof.so
 vendor/lib64/hw/sensors.hal.tof.so
 
-# Fingerprint - from m1971 - Lenovo/m1971/m1971:10/QKQ1.190825.002/11.5.381_200603:user/release-keys
+# Fingerprint - from m1971 - meizu/m1971/m1971:10/QKQ1.190825.002/11.5.381_200603:user/release-keys
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|38767b79f818e60948043fe125c56d4d88b75d47
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|a074aa25cbb5e7aab9d2b8cabea56992632ab685
 vendor/firmware/goodix_cfg_group.bin|3f95a1d657928fa54ecb282d3ad0ecf347b281bb
